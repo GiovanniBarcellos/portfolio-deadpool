@@ -1,4 +1,8 @@
 main {
+  
+  position: relative;
+  z-index: 1;
+
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -26,8 +30,32 @@ main {
   color: #e31b23;
 }
 
+.hero-content {
+  text-align: left;
+}
+
+.hero-image {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 50%;
+  max-width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
 .hero {
-  text-align: center;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+
   padding: 100px 20px;
 }
 
@@ -43,6 +71,9 @@ main {
 }
 
 .hero-button {
+  display: inline-block;
+  text-decoration: none;
+
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -80,12 +111,60 @@ main {
   margin-top: 40px;
 }
 
+
+.projeto-card button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #e31b23;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.projeto-card button:hover {
+  background: white;
+  color: #111;
+  transform: translateX(4px);
+}
+
+.projeto-numero {
+  display: inline-block;
+  background: #e31b23;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 2px solid #111;
+  transform: rotate(-2deg);
+  margin-bottom: 12px;
+}
+
+.projeto-card .tecnologia {
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background: #e31b23;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
 .projeto-card {
-  padding: 24px;
-  border: 1px solid #333;
-  border-radius: 12px;
+  position: relative;
+  padding: 30px;
+  background: #111;
+  border: 4px solid #111;
   text-align: left;
+  transform: rotate(-1deg);
   transition: transform 0.2s, border-color 0.2s;
+  box-shadow: 6px 6px 0 #000;
 }
 
 .projeto-card:hover {
@@ -101,7 +180,7 @@ main {
 
 .contato {
   padding: 80px 20px;
-  text-align: center;
+  text-align: left;
   
 }
 
@@ -143,7 +222,7 @@ main {
 .logo {
   margin: 0;
   font-size: 28px;
-  color: #e31b23;
+  color: #8B2323;
   letter-spacing: 2px;
 }
 
@@ -153,4 +232,105 @@ main {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 15px;
+}
+
+.comic-panel {
+  position: relative;
+  height: 400px;
+  padding: 40px;
+  background: #e31b23;
+  border: 4px solid white;
+  transform: rotate(2deg);
+  overflow: hidden;
+}
+
+.comic-panel span {
+  display: inline-block;
+  padding: 8px 14px;
+  background: white;
+  color: #111;
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(-6deg);
+}
+
+.comic-panel h2 {
+  margin: 40px 0 20px;
+  font-size: 52px;
+  line-height: 0.95;
+  color: white;
+}
+
+.comic-panel p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #111;
+}
+
+.decoracao {
+  
+  position: absolute;
+  width: 300px;
+  pointer-events: none;
+}
+
+.decoracao-direita {
+  top: 50px;
+  left: 40px;
+  
+}
+
+.quadrinhos-fundo {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.quadrinho {
+  position: absolute;
+  width: 17%;
+  height: 48%;
+  object-fit: cover;
+}
+
+.quadrinho-1 {
+  top: 0;
+  left: 0;
+}
+
+.quadrinho-2 {
+  top: 0;
+  right: 0;
+}
+
+.quadrinho-3 {
+  bottom: 0;
+  left: 0;
+}
+
+.quadrinho-4 {
+  bottom: 0;
+  right: 0;
+}
+
+.linkes {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #e31b23;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linkes:hover {
+  background: white;
+  color: #111;
+  transform: translateX(4px);
 }

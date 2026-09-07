@@ -1,5 +1,5 @@
 function Contato () {
-    return (<section id="contato"> 
+    return (<section id="contato" className ="contato"> 
         <h2> Entre em contato</h2>
 
         <p>Bora trocar uma ideia, entre em contato comigo</p>
@@ -8,8 +8,12 @@ function Contato () {
           Github 
         </a>
 
-        <a href="giovanni.barcellos06@gmail.com">
+        <a href="malito:giovanni.barcellos06@gmail.com">
             Email
+        </a>
+
+        <a href="https://www.instagram.com/barcellosvx/">
+           Instagram
         </a>
        </div>
         

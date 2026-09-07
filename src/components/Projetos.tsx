@@ -6,13 +6,19 @@ function Projetos () { //5o
       <h2> Meus projetos</h2>
     <div className="projetos-grid">
       <ProjetoCard 
+      numero={1}
       nome="Calculadora"
       descricao = "Calculadora criada utilizando HTML,CSS,JS primeiro projeto de frontend"
+      tecnologias={["HTML ","CSS ","JS"]}
+      link = "https://giovannibarcellos.github.io/Calculadora/"
       />
 
       <ProjetoCard 
+      numero={2}
       nome="Conversor"
-      descricao="Conversor de moedas,segundo projeto de front end"/>
+      descricao="Conversor de moedas,segundo projeto de front end"
+      tecnologias={["HTML ","CSS ","JS"]}
+      link = "https://github.com/lgiorgio1/CurrencyConverter" />
     </div>
     </section>
   )
