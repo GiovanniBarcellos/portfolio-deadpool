@@ -8,7 +8,7 @@ function Contato () {
           Github 
         </a>
 
-        <a href="malito:giovanni.barcellos06@gmail.com">
+        <a href="mailto:giovanni.barcellos06@gmail.com">
             Email
         </a>
 

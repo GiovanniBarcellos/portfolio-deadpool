@@ -13,7 +13,7 @@ function Hero() { // 2o
 
     <div className="hero-content"> 
         <p className="hero-tag"> DESENVOLVEDOR EM ANDAMENTO </p>
-      <h1>Fala, eu sou o Swift </h1>
+      <h1>Fala, eu sou o Giovanni </h1>
 
       <p>
         Sou estudante de Ciência da Computação e estou aprendendo

@@ -1,6 +1,15 @@
+import captura from "../assets/cap.png"
+
 function Sobre () { //4o
   return (
      <section id="sobre" className="sobre">
+
+      <img
+      src = {captura}
+      alt =""
+      className="decoracao-delinha"
+      />
+
       <h2> Sobre mim</h2>
       <p> 
         Sou estudante de Ciência da Computação e estou construindo
