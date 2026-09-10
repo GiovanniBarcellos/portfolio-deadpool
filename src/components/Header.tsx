@@ -2,7 +2,7 @@ function Header () { //3o
   return (
     <header className = "header">
       <h1 className ="logo">
-        Swift
+        GBA
       </h1>
       <nav>
         <a href="#sobre"> Sobre </a>
